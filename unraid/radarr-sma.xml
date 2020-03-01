@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>radarr-sma</Name>
+  <Repository>mdhiggins/radarr-sma</Repository>
+  <Registry>https://hub.docker.com/r/mdhiggins/radarr-sma/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/mdhiggins/radarr-sma/</Support>
+  <Project/>
+  <Overview>radarr with sickbeard_mp4_automator   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container&#xD;
+&#xD;
+[br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+&#xD;
+[b]/config[/b] : Storing all Radarr config files [br]&#xD;
+&#xD;
+[b]/movies[/b] : Point to Movies share[br]&#xD;
+&#xD;
+[b]/downloads[/b] : Point to the Downloads share [br]&#xD;
+&#xD;
+[b]7878[/b] : The web-interface. [br]</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:7878]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/radarr.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <Description>radarr with sickbeard_mp4_automator   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container&#xD;
+&#xD;
+[br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+&#xD;
+[b]/config[/b] : Storing all Radarr config files [br]&#xD;
+&#xD;
+[b]/movies[/b] : Point to Movies share[br]&#xD;
+&#xD;
+[b]/downloads[/b] : Point to the Downloads share [br]&#xD;
+&#xD;
+[b]7878[/b] : The web-interface. [br]</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>7878</HostPort>
+        <ContainerPort>7878</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/movies</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/downloads</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="port" Target="7878" Default="7878" Mode="tcp" Description="Container Port: 7878" Type="Port" Display="always" Required="true" Mask="false">7878</Config>
+  <Config Name="config" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/radarr-sma/</Config>
+  <Config Name="movies" Target="/movies" Default="" Mode="rw" Description="Container Path: /movies" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/data/media/</Config>
+  <Config Name="downloads" Target="/downloads" Default="" Mode="rw" Description="Container Path: /downloads" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/data/media/dl/</Config>
+</Container>
