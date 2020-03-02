@@ -67,7 +67,7 @@
       <HostDir>/mnt/user/appdata/radarr-sma/autoProcess.ini</HostDir>
       <ContainerDir>/usr/local/sma/autoProcess.ini</ContainerDir>
       <Mode>rw</Mode>
-    </Volume
+    </Volume>
   </Data>
   <Environment/>
   <Labels/>
