@@ -1,12 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>radarr-sma-nvidia</Name>
-  <Repository>mdhiggins/radarr-sma</Repository>
-  <Branch>
-    <Tag>build</Tag>
-    <TagDescription>SMA build container for customer ffmpeg</TagDescription>
-    <PostArgs>ffmpeg_tag=4.2-nvidia</PostArgs>
-  </Branch>
+  <Repository>mdhiggins/radarr-sma:build</Repository>
   <Registry>https://hub.docker.com/r/mdhiggins/radarr-sma/</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
@@ -28,7 +23,7 @@
   <WebUI>http://[IP]:[PORT:7878]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/radarr.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>ffmpeg_tag=4.2-nvidia</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <Description>radarr with sickbeard_mp4_automatorand nvidia ffmpeg&#xD;
