@@ -24,7 +24,7 @@
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/radarr.png</Icon>
   <ExtraParams/>
-  <PostArgs>ffmpeg_tag=4.2-nvidia</PostArgs
+  <PostArgs>ffmpeg_tag=4.2-nvidia</PostArgs>
   <CPUset/>
   <Description>radarr with sickbeard_mp4_automatorand nvidia ffmpeg&#xD;
 &#xD;
