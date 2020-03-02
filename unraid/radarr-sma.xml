@@ -41,7 +41,7 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort></HostPort>
+        <HostPort>7878</HostPort>
         <ContainerPort>7878</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
