@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>radarr-sma</Name>
+  <Name>radarr-sma-nvidia</Name>
   <Repository>mdhiggins/radarr-sma</Repository>
   <Branch>
     <Tag>build</Tag>
@@ -74,11 +74,11 @@
       <Mode>rw</Mode>
     </Volume
   </Data>
-  <Environment/>
-  <Labels/>
-  <Config Name="port" Target="7878" Default="7878" Mode="tcp" Description="Container Port: 7878" Type="Port" Display="always" Required="true" Mask="false">7878</Config>
-  <Config Name="config" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="movies" Target="/movies" Default="" Mode="rw" Description="Container Path: /movies" Type="Path" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="downloads" Target="/downloads" Default="" Mode="rw" Description="Container Path: /downloads" Type="Path" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="autoProcess.ini" Target="/usr/local/sma/autoProcess.ini" Default="" Mode="rw" Description="autoProcess.ini" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/radarr-sma/autoProcess.ini</Config>
-</Container>
+    <Environment/>
+    <Labels/>
+    <Config Name="port" Target="7878" Default="7878" Mode="tcp" Description="Container Port: 7878" Type="Port" Display="always" Required="true" Mask="false">7878</Config>
+    <Config Name="config" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false"></Config>
+    <Config Name="movies" Target="/movies" Default="" Mode="rw" Description="Container Path: /movies" Type="Path" Display="always" Required="false" Mask="false"></Config>
+    <Config Name="downloads" Target="/downloads" Default="" Mode="rw" Description="Container Path: /downloads" Type="Path" Display="always" Required="false" Mask="false"></Config>
+    <Config Name="autoProcess.ini" Target="/usr/local/sma/autoProcess.ini" Default="" Mode="rw" Description="autoProcess.ini" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/radarr-sma/autoProcess.ini</Config>
+  </Container>
