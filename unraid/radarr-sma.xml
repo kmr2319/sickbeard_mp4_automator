@@ -8,7 +8,7 @@
   <Privileged>false</Privileged>
   <Support>https://hub.docker.com/r/mdhiggins/radarr-sma/</Support>
   <Project/>
-  <Overview>radarr with sickbeard_mp4_automator   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container&#xD;
+  <Overview>radarr with sickbeard_mp4_automator&#xD;
 &#xD;
 [br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
 &#xD;
@@ -26,7 +26,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <Description>radarr with sickbeard_mp4_automator   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container&#xD;
+  <Description>radarr with sickbeard_mp4_automator&#xD;
 &#xD;
 [br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
 &#xD;
@@ -41,7 +41,7 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>7878</HostPort>
+        <HostPort></HostPort>
         <ContainerPort>7878</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
