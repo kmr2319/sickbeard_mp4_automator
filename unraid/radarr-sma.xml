@@ -63,11 +63,17 @@
       <ContainerDir>/downloads</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/radarr-sma/autoProcess.ini</HostDir>
+      <ContainerDir>/usr/local/sma/autoProcess.ini</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume
   </Data>
   <Environment/>
   <Labels/>
   <Config Name="port" Target="7878" Default="7878" Mode="tcp" Description="Container Port: 7878" Type="Port" Display="always" Required="true" Mask="false">7878</Config>
   <Config Name="config" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="movies" Target="/movies" Default="" Mode="rw" Description="Container Path: /movies" Type="Path" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="downloads" Target="/downloads" Default="" Mode="rw" Description="Container Path: /downloads" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="movies" Target="/movies" Default="" Mode="rw" Description="Container Path: /movies" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="downloads" Target="/downloads" Default="" Mode="rw" Description="Container Path: /downloads" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="autoProcess.ini" Target="/usr/local/sma/autoProcess.ini" Default="" Mode="rw" Description="autoProcess.ini" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/radarr-sma/autoProcess.ini</Config>
 </Container>
